@@ -1,40 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Challenge: A classy gallery</title>
-        <style>
-            body {
-                font-family: cursive;
-            }
-            
-            .image-small {
-                width: 150px;
-            }
-            .image-medium {
-                width: 200px;
-            }
-            .black-frame {
-                border: 8px double rgb(38, 38, 38);
-            }
-            .gold-frame {
-                border: 10px ridge rgb(255, 183, 0);
-            }
-            .silver-frame {
-                border: 10px groove rgb(204, 204, 204);
-            }
-        </style>
-    </head>
-    <body>
-        
-        <h1>A classy gallery</h1>
-        
-        <img class= "gold-frame image-medium" src="https://www.kasandbox.org/programming-images/animals/cat.png">
-        
-        <img class= "silver-frame image-small" src="https://www.kasandbox.org/programming-images/animals/fox.png">
-        
-        <img class= "black-frame image-medium" src="https://www.kasandbox.org/programming-images/animals/penguins.png">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/slicknav.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+</head>
+
+<!--Image by <a href="https://pixabay.com/users/hschmider-3108740/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3076685">Hermann Schmider</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3076685">Pixabay</a>-->
 
 
-    </body>
+
+
+
+
+<body>
+
+	<header>
+		
+		<img src="../images/logo.png" alt="My Logo Logo" height="89px">
+		
+		
+		<ul id="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="about-me.html">About Me</a></li>
+		</ul>
+		
+	</header>
+
+
+
+
+
+
+	<main>
+		
+		<div class="row">
+			<div class="col">
+				<div class="hero">
+					<p class="subheading">I'M A</p>
+					<h1>Digital Designer</h1>
+					<p class="heading-body-copy">Welcome to my Website! This is where I have all my work and an about me page, so be sure to have a look around.</p>
+				</div>
+			</div>
+		</div>	
+		
+		<div class="row">
+			<div class="col col-lg col-md col-sm"><img src="../images/Birth.png" alt="Swirling Triangles"></div>
+			<div class="col col-lg col-md col-sm"><img src="../images/Damnation.png" alt="Spiked Cirle"></div>
+			<div class="col col-lg col-md col-sm"><img src="../images/Proximity.png" alt="City at Night"></div>
+			<div class="col col-lg col-md col-sm"><img src="../images/Scale.png" alt="Eclipse"></div>
+			<div class="col col-lg col-md col-sm"><img src="../images/Similarity.png" alt="Planets"></div>
+			<div class="col col-lg col-md col-sm"><img src="../images/Variety.png" alt="Germs"></div>
+		</div>	
+		
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="../java/jquery-1.11.3.min.js"></script>
+	<script src="../java/jquery.slicknav.js"></script>
+	<script>
+		$(function(){
+			$('#menu').slicknav();
+		});
+	</script>
+
+</body>
 </html>
